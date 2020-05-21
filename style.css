@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
     --success-color: #00ebc7;
@@ -7,7 +7,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -22,7 +22,7 @@ body {
 
 .container {
     border-radius: 4px;
-    width: 360px;
+    width: 352px;
 }
 
 h3 {
