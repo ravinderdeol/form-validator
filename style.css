@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+:root {
+    --success-color: #00ebc7;
+    --error-color: #ff5470;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Courier Prime', monospace;
+}
+
+body {
+    background-color: #242629;
+    color: #fffffe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    border-radius: 4px;
+    width: 360px;
+}
+
+h3 {
+    text-align: center;
+    margin: 0 0 20px;
+    color: #fffffe;
+}
+
+.form {
+    padding: 40px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form.control label {
+    color: #7f5af0;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.form-control input {
+    border: 2px solid #16161a;
+    background-color: #16161a;
+    color: #fffffe;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: #7f5af0;
+}
+
+.form-control.success input {
+    border-color: var(--success-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control small {
+    border-color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    cursor: pointer;
+    background-color: #7f5af0;
+    border: 2px solid #7f5af0;
+    border-radius: 4px;
+    color: #fffffe;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
